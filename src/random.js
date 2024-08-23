@@ -40,24 +40,6 @@ class random {
     static random() { return Math.random(); }
 }
 
-class Camera {
-    constructor(name) {
-        this.src = [];
-        this.status = 0;
-        this.next = []
-        this.staying = []
-    }
-    
-    load(src) { this.src.push(src); }
-    loads() { for(let src of arguments) this.load(src); }
-    
-    push(object) { this.staying.push(object); }
-    remove(object) {
-        const index = this.staying.indexOf(object);
-        this.staying.splice(index);
-    }
-    
-}
 
 
 
